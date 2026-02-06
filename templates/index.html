@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header class="header-gradient">
+    <div class="profile-container">
+        <!-- Use o caminho RELATIVO dentro da pasta 'static' -->
+        <img src="{{ url_for('static', filename='img/profile.jpeg') }}" class="profile-photo">
+    </div>
+
+
+    <div class="particles">
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    
+    <div class="lines-bg"></div>
+
+    <div class="header-content">
+        <h1>Olá, eu sou <span>Denilson </span></h1>
+        <p>Tenho 18 anos e interesse em desenvolvimento de software e tecnologia.
+            Busco oportunidades para aplicar meus conhecimentos, aprender com novos desafios e contribuir com soluções eficientes e bem estruturadas.</p>
+        <a href="/projetos" class="btn btn-header">Ver Projetos</a>
+        <div class="social-icons">
+            </a>
+            <a href="https://linkedin.com/in/denilson-nunes-santos-4554333a4" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com/denilsonnsanttos_" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:denilsonnunessantos554@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</header>
+{% endblock %}
