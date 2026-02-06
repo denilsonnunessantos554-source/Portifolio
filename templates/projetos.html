@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- HEADER COM DEGRADÊ -->
+<section class="section-header">
+    <div class="section-header-content">
+        <h1>Projetos</h1>
+        <p>Alguns trabalhos e aplicações que desenvolvi</p>
+    </div>
+</section>
+
+<!-- CONTEÚDO -->
+<div class="container">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="project-card">
+            
+                <h5>Jogo Desktop de labirinto</h5>
+                <p>Jogo de labirinto, feito com o paygame e paython.</p>
+         <img src="{{ url_for('static', filename='img/labirintopng.png') }}" class="profile-photo">
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="project-card">
+                <h5>Site MCdonald's</h5>
+                <p>Site criado inspirado no MCdonald's, feito com o vs code e a linguagem de programação python.</p>
+                 <!-- Use o caminho RELATIVO dentro da pasta 'static' -->
+        <img src="{{ url_for('static', filename='img/mcdonalds.png') }}" class="profile-photo">
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+{% endblock %}
+<section class="projects-section">
+    <div class="bubbles"></div>
+
+    <h2>Projetos</h2>
+
+    <div class="projects-grid">
+        <!-- seus cards aqui -->
+    </div>
+</section>
+
+
+
+
